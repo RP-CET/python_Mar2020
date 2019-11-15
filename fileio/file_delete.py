@@ -6,7 +6,7 @@ print(os.getcwd())
 os.rmdir("folder2_backup")
 
 import shutil
-#delete directory
+#delete directory  - recursive
 shutil.rmtree("folder2_backup")
 
 

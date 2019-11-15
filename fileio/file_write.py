@@ -1,6 +1,6 @@
 #opens a file, create new if doesn't exist, for content writing
 helloFile = open("hello2.txt", "w")
-helloFile.write("This is a line\n")
+helloFile.write("This is ABCD\n")
 helloFile.close()
 
 #opens the said file for content reading

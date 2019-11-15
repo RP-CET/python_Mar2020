@@ -3,6 +3,9 @@ import openpyxl
 workbook = openpyxl.load_workbook("students_attendance.xlsx")
 sheet=workbook["Sheet1"]
 
+#You can use this to find the available sheets
+# print(workbook.sheetnames)
+
 max_row = sheet.max_row
 max_column = sheet.max_column
 

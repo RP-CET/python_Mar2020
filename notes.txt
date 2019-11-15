@@ -15,3 +15,5 @@ pip install beautifulsoup4
 pip install telepot
 
 pip install sendMail
+
+pip install python-pptx

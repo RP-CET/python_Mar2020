@@ -1,6 +1,6 @@
 import os
 
-for folderName, subfolders, filenames in os.walk('.'):
+for folderName, subfolders, filenames in os.walk('../csv'):
     print('The current folder is ' + folderName)
 
     for subfolder in subfolders:
