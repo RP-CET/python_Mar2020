@@ -2,7 +2,7 @@ import shutil
 import os
 
 
-#copy file  src         target
+#copy file
 if os.path.isdir("folder2") == False:
     os.makedirs("folder2")
 if os.path.isfile("folder2/hello.txt") == False:
@@ -19,8 +19,7 @@ if os.path.isdir("folder2_backup") == False:
 
 if os.path.isdir("folder2/anotherfolder") == False:
     os.makedirs("folder2/anotherfolder")
-else:
-    shutil.move("folder2/hello.txt", "folder2/anotherfolder")
+shutil.move("folder2/hello.txt", "folder2/anotherfolder")
 
 #move and rename file
 shutil.move("folder2/anotherfolder/hello.txt", "folder2/anotherfolder/newhello.txt")
