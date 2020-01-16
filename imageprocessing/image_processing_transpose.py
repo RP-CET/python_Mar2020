@@ -3,7 +3,6 @@ from PIL import Image, ImageFilter, ImageOps
 
 where = "img"
 ext = "jpg"
-outFolder = "out"
 
 def processImages():
     c = 1
@@ -12,14 +11,11 @@ def processImages():
             fullname = os.path.join(root, file)
             if file.endswith(ext):
                 im = Image.open(fullname)
-                outFilename = os.path.join(outFolder,file)
                 print ("%2d %s %s (%s)" % \
                        (c, fullname, im.size, im.mode))
-                out = im.filter(ImageFilter.BLUR)
-                #out.show()
-                out.save(outFilename)
-                c += 1
+                out = im.transpose(Image.ROTATE_90)
+                #out = out.transpose(Image.FLIP_LEFT_RIGHT)
+                out.show()
                 break
 
 processImages()
-

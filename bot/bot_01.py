@@ -3,7 +3,7 @@ import time
 import telepot
 from telepot.loop import MessageLoop
 
-TOKEN = 'Your Token'
+TOKEN = '1017886529:AAE2piyzQRdjPLkS1s16tLVpX0_0nmdx-HY'
 
 # Define the information to return per command
 def get_help():

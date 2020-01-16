@@ -4,7 +4,7 @@ import telepot
 from telepot.loop import MessageLoop
 from telepot.namedtuple import ReplyKeyboardMarkup, KeyboardButton
 
-TOKEN = 'Your Token'
+TOKEN = '1017886529:AAE2piyzQRdjPLkS1s16tLVpX0_0nmdx-HY'
 
 COMMANDS = ["help","offers","events"]
 

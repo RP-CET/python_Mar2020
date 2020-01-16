@@ -1,6 +1,6 @@
 import smtplib
 sender_email_address ="kwseow@gmail.com"
-sender_email_password = "<you_google_app_password>"
+sender_email_password = "<your_google_app_password>"
 receiver_email_address = "kwseow@gmail.com"
 email_title_content = "Subject: Sending Email Using Python\nThis is a test mail."
 

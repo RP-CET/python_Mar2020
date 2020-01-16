@@ -1,5 +1,4 @@
 import os
-from PIL import Image
 
 where = "img"
 ext = "jpg"
@@ -10,12 +9,8 @@ def processImages():
         for file in files:
             fullname = os.path.join(root, file)
             if file.endswith(ext):
-                im = Image.open(fullname)
-                print ("%2d %s %s (%s)" % \
-                       (c, fullname, im.size, im.mode))
-                im.show()
+                print ("%2d %s" % (c, fullname))
                 c += 1
-                break
 
 processImages()
 

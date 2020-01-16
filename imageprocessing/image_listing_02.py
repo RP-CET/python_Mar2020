@@ -2,7 +2,7 @@ import os
 
 where = "img"
 
-def processAllImage(onlyFirst):
+def processImages():
     c = 1
     for root, dirs, files in os.walk(where):
         for file in files:
@@ -13,7 +13,7 @@ def processAllImage(onlyFirst):
                     file.lower().endswith("svg"):
                 print ("%2d %s" % (c, fullname))
                 c += 1
-                if (onlyFirst):
-                    return
 
-processAllImage(True)
+processImages()
+
+

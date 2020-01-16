@@ -21,4 +21,11 @@ for i in children:
     writer1.writerow([location, i.text])
     towns.append([location, i.text])
 
+y = {}
+for (k,v) in towns:
+    print ("Key:" + k + " " + "Value:" + v)
+
+
+
+
 writerFileHandle.close()

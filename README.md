@@ -1,4 +1,4 @@
-# Introductory Programming Using Python (Sep 2019)
+# Introductory Programming Using Python (Jan 2021 onwards) - Day 2
 
 ## Python (download version specific to your OS) 
 https://www.python.org/downloads/
