@@ -3,7 +3,10 @@ from PIL import Image, ImageFilter, ImageOps
 
 where = "img"
 ext = "jpg"
-outFolder = "out"
+outFolder = "output"
+
+if os.path.isdir("output") == False:
+    os.makedirs("output")
 
 def processImages():
     c = 1

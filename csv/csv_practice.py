@@ -2,13 +2,17 @@ import csv
 
 readerFileHandle = open("W65Z.csv","r", newline='')
 reader1 = csv.reader(readerFileHandle)
-#using for loop to retrieve from the CSV file lune by line
-output = 1
+
+
+#use a (for) loop to retrieve data from the CSV file line by line
+output = "yes"
 for row in reader1:
-    if output == 0:
+    if output == "yes":
         print(row)
-        output = 1
+        output = "no"
     else:
-        output = 0
+        #no printing
+        output = "yes"
+
 
 readerFileHandle.close()

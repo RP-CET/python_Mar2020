@@ -15,9 +15,8 @@ def processAllImage():
                 im = Image.open(fullname)
                 print ("%2d %s %s (%s)" % (c, fullname, im.size, im.mode))
                 out = ImageOps.grayscale(im)
-                c += 1
                 outFilename = os.path.join("processed", file)
                 out.save(outFilename)
-
+                c += 1
 
 processAllImage()
